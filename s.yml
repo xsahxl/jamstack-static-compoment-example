@@ -3,6 +3,8 @@ JAMSTACK_STATIC_Component:
   Provider: alibaba
   Access: test
   Properties:
-    bucket: shl-testx
+    bucket: shl-test
     region: cn-hangzhou
-    buildCommand: npm run build
+    deploy:
+      buildCommand: npm run build
+      publishDirectory: build
